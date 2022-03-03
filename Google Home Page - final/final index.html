@@ -4,40 +4,429 @@
     #box:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
+
+
+
+.container {
+	width: 500px;
+	margin-left: 60%;
+	 white-space: nowrap; 
+}
+
+.launcher {
+	margin-left:40%;
+	text-align: center;
+	color:white;
+	display: inline-block;
+	
+}
+
+header {
+	text-align:center;
+}
+
+header h1 {
+	font-size: 2em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+	margin: 20px;
+}
+
+.app-launcher {
+	position: absolute;
+	left: 84px;
+	top: 40px;
+	display: inline-block; margin-left:70%
+}
+
+.app-launcher::before {
+	content: '';
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid white;
+	position: absolute;
+	top: -9px;
+	left: 50%;
+	margin-left: -5px;
+	z-index: 1;
+	display: inline-block;
+}
+
+.apps {
+	position: relative;
+	border: 1px solid #ccc;
+	border-color: rgba(0,0,0,.2);
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+	-webkit-transition: height .2s ease-in-out;
+	transition: height .2s ease-in-out;
+	min-height: 196px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 320px;
+	height: 396px;
+	margin-bottom: 30px;
+	display: inline-block;
+    }
+
+.launcher .button {
+	cursor: pointer;
+	width: 32px;
+	
+	display: inline-block; 
+}
+
+.hide {
+	display: none;
+	display: inline-block;
+	
+}
+
+.apps ul {
+	background: #fff;
+	margin: 0;
+	padding: 28px;
+	width: 264px;
+	overflow: hidden;
+	list-style: none;
+	display: inline-block;
+}
+
+.apps ul li {
+	float: left;
+	height: 64px;
+	width: 88px;
+	color: black;
+	padding: 18px 0;
+	text-align: center;
+	
+}
+
+.apps .more {
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	width: 320px;
+	background: #f5f5f5;
+	cursor: pointer;
+	height: 40px;
+	overflow: hidden;
+	position: absolute;
+	text-decoration: none;
+	color: #282828;
+	display: inline-block;}
+
+.apps.overflow .more {
+	border-bottom: 1px solid #ebebeb;
+	left: 28px;
+	width: 264px;
+	height: 0;
+	cursor: default;
+	height: 0;
+	outline: none;
+	display: inline-block;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+	background-clip: padding-box;
+	background-color: rgba(0,0,0,.3);
+	border: 5px solid transparent;
+	border-radius: 10px;
+	min-height: 20px;
+	min-width: 20px;
+	height: 5px;
+	width: 5px;
+	display: inline-block;
+}
+
+::-webkit-scrollbar {
+	height: 15px;
+	width: 15px;
+	background: white;
+	display: inline-block;
+}
+
+::-webkit-scrollbar-button {
+	height: 0;
+	width: 0;
+	display: inline-block;
+}
+
+.google {
+	height: 50%;
+}
+
+.centerbar 
+	{ white-space: nowrap; }
+
+	nav a:hover {
+		text-decoration: underline;
+		opacity: .85;}
+
+		nav a {
+			font-size: 13px;
+			display: inline-block;
+			line-height: 24px;
+			font-weight: 400;
+			color: rgb(0,0,0, 0.87);
+			cursor: pointer;
+			padding: 5px 6.7px
+		}
+		nav a:hover {
+			text-decoration: underline;
+			opacity: .85;
+		}
+		nav img {
+			width: 34px;
+			padding: 5px;
+			margin: auto 7px;
+			cursor: pointer;
+		}
+		nav img:hover {
+			opacity: .8;
+		}
+		nav button {
+			border: 1px solid #4285f4;
+			font-weight: bold;
+			outline: none;
+			background: #4285f4;
+			color: #fff;
+			padding: 7px 12px;
+			border-radius: 3px;
+			margin-left: 7px;
+			cursor: pointer;
+		}
+
+		nav {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			margin-right: 30px;
+			margin-top: 14px;
+		}
+
+		.lang {
+			margin-top: 30px;
+			text-align: center;
+			font-size: 13px;
+			color: #111;
+		}
+		.lang a {
+			margin-left: 5px;
+			color: #1a0dab;
+		}
+		.lang a:hover {
+			text-decoration: underline;
+		}
+
+		footer {
+			background: #f2f2f2;
+		}
+		footer h4 {
+			color: rgba(0,0,0, 0.54);
+			font-size: 15px;
+			line-height: 39.5px;
+			font-weight: 400;
+			padding-left: 29px;
+			border: 1px solid #eee;
+		}
+		footer a {
+			color: #5f6368;
+			display: inline-block;
+			padding: 12px 11.3px;
+			font-size: 14px;
+		}
+		footer a:hover {
+			text-decoration: underline;
+		}
+		.links {
+			border-top: 1px solid #ddd;
+			display: flex;
+		}
+		.link-1 {
+			padding-left: 18.7px;
+			flex: 1;
+		}
+		.link-2 {
+			padding-right: 18.7px;
+		}
+
 </style>
 
 
+
+
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Home</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" href="C:\Users\91990\OneDrive\Desktop\Google Home Page - final\google UI kit\Google-favicon-2015.png">
+    <meta charset="UTF-8">
+  <title>Google</title>
+  <link rel="stylesheet" href="./style.css">
+
 
 </head>
 <body>
     
-    <div class="text-end" >
-        <a href="#">Gmail</a>
-        <a href="#"> Images</a>
-        <img  style="height: 32px;width: 32px;"    src="C:\Users\91990\OneDrive\Desktop\Google Home Page - final\google UI kit\menu.png">
-        <img style="height: 20px;width: 20px; margin-right: 30px;"  src="C:\Users\91990\OneDrive\Desktop\Google Home Page - final\google UI kit\unnamed.png">
-    </div>
+    <div class="container">
+    <nav> <a href="#"  >Gmail</a> &nbsp;&nbsp;
+        <a href="#" >Images</a> 
+            <div class="launcher">
+                <div class="button">
+                    
+                    <img src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\app launcher.png" style="width: 20px;height: 20px;">
+                
+                </div>
+                <div class="app-launcher">
+                    <div class="apps" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >
+                        <ul class="first-set">
+                          <li id="box" ><i > <img  style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google-favicon-2015.png"> <br> Search </i></li>
+                          <li id="box"  ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Hangouts_icon.png"> <br> Chats </i></li>
+                          <li id="box" ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_Drive_icon.png"> <br> Drive </i></li>
+                          <li id="box" ><i>  <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\playstore.png"> </i> <br> Playstore </li>
+                          <li id="box" ><i > <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Gmail_icon_(2020).svg.png"></i> <br> Gmail </li>
+                          <li id="box"  ><i ><img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\calender.png"> <br> Calender </i></li>
+                          <li id="box" ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\duo.png">  </i> <br> Duo </li>
+                          <li id="box" ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_News_icon.svg.png"> </i> <br> News </li>
+                          <li id="box" ><i>  <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\YouTube.png"> </i> <br> Youtube </li>
+                          <li id="box" ><i > <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\google-shopping.png">  </i> <br> Shopping </li>
+                          <li id="box" ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_Translate_Icon.png">  </i> <br> Translate </li>
+                          <li id="box" ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_Contacts.png"> </i> <br> Contacts </li>
+                          <li id="box" ><i>  <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_Photos_icon.png"> </i> <br> Photos </li>
+                          <li id="box" ><i > <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_Chat.png">  </i> <br> Chat </li>
+                        </ul>
+                        <a href="#" class="more">More</a>
+                        <ul class="second-set hide">
+                            <li id="box" ><i > <img  style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google-favicon-2015.png"> <br> Search </i></li>
+                            <li id="box"  ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Hangouts_icon.png"> <br> Chats </i></li>
+                            <li id="box" ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_Drive_icon.png"> <br> Drive </i></li>
+                            <li id="box" ><i>  <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\playstore.png"> </i> <br> Playstore </li>
+                            <li id="box" ><i > <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Gmail_icon_(2020).svg.png"></i> <br> Gmail </li>
+                            <li id="box"  ><i ><img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\calender.png"> <br> Calender </i></li>
+                            <li id="box" ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\duo.png">  </i> <br> Duo </li>
+                            <li id="box" ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_News_icon.svg.png"> </i> <br> News </li>
+                            <li id="box" ><i>  <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\YouTube.png"> </i> <br> Youtube </li>
+                            <li id="box" ><i > <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\google-shopping.png">  </i> <br> Shopping </li>
+                            <li id="box" ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_Translate_Icon.png">  </i> <br> Translate </li>
+                            <li id="box" ><i> <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_Contacts.png"> </i> <br> Contacts </li>
+                            <li id="box" ><i>  <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_Photos_icon.png"> </i> <br> Photos </li>
+                            <li id="box" ><i > <img style="width:32px; height: 32px;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_Chat.png">  </i> <br> Chat </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            &nbsp;&nbsp; <a> <img style="height: 20px;width: 20px; margin-right: 30px;"  src="C:\Users\91990\OneDrive\Desktop\Google Home Page - final\google UI kit\unnamed.png"> </a>
+     </nav>   </div>
+    
+       <div class="google">
+           <img  style="text-align: center;margin-top: 20%;margin-left: 40%;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\googlelogo_color_272x92dp.png">
+       
+       </div>
 
-    <div>
-        <div  class="container-fluid text-start" style="height: 50%;">
-            <img class="img-fluid" style="text-align: center;margin-top: 20%;margin-left: 40%;" src="C:\Users\91990\OneDrive\Desktop\Google Home Page - final\google UI kit\googlelogo_color_272x92dp.png">
-            <div id="box" class="text-center d-lg-flex align-items-lg-center" style="border-radius: 15px;color:white  ;background:white;margin-left: 40%;margin-right: 35%;height: 30px;width: 300px;">
-                <img style="height: 20px;width: 20px;" src="C:\Users\91990\OneDrive\Desktop\Google Home Page - final\google UI kit\search.png">
-                <input type="text" style="height: 20px;border-style: none;width: 240px;background:white;border-radius: 3px;padding: 0;padding-top: 0;padding-left: 15px;" placeholder="Enter your text here">
-                <img class="img-fluid" style="height: 20px;width: 20px;background:white;" src="C:\Users\91990\OneDrive\Desktop\Google Home Page - final\google UI kit\Google_mic.svg.png">
+
+    <div >
+        
+            
+            <div class="centerbar" id="box"   class="text-center d-lg-flex align-items-lg-center" style="border-radius: 15px;color:white  ;background:white;margin-left: 40%;margin-right: 35%;width: 300px;">
+                <img  class="img-fluid" style="height: 20px;width: 20px; display: inline-block;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\search.png">
+               
+                <input type="text" style=" display: inline-block;  height: 20px;border-style: none;width: 240px;background:white;border-radius: 3px;padding: 0;padding-top: 0;padding-left: 15px;" placeholder="Enter your text here">
+                <img class="img-fluid" style=" display: inline-block;  height: 20px;width: 20px;background:white;" src="C:\Users\91990\OneDrive\Desktop\Github\rajrajeshwarigs\Google Home Page - final\google UI kit\Google_mic.svg.png">
                <br>
             </div>
             <div  class="text-center d-lg-flex align-items-lg-center; margin-left:40%">
-                <input id="box" type="submit" value="google search" style="border: none; margin-left: 40%; margin-top: 30px;" > &nbsp;&nbsp;
-                <input id="box" type="submit" value="I'm feeling lucky" style="border: none; margin-top: 30px;" >
+                <input id="box" type="submit" value="google search" style="border: none; height: 40px; margin-left: 40%; margin-top: 30px;" > &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <input id="box" type="submit" value="I'm feeling lucky" style="border: none; height:40px; margin-top: 30px;" >
             </div>
         </div>
+    
+    <div class="lang">
+        Google offered in:
+        <a href="#">Nederlands</a>
+        <a href="#">Frysk</a>
     </div>
+</section>
+<footer>
+    <h4>Nederlands</h4>
+    <div class="links">
+        <div class="link-1">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+            <a href="#">How Search works</a>
+        </div>
+        <div class="link-2">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+        </div>
+    </div>
+</footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+    $(document).ready(function(){
+    
+        var scroll = false;
+        var launcherMaxHeight = 396;
+        var launcherMinHeight = 296;
+        
+        // Mousewheel event handler to detect whether user has scrolled over the container
+        $('.apps').bind('mousewheel', function(e){
+              if(e.originalEvent.wheelDelta /120 > 0) {
+                // Scrolling up
+              }
+              else{
+                  // Scrolling down
+                  if(!scroll){
+                      $(".second-set").show();
+                      $('.apps').css({height: launcherMinHeight}).addClass('overflow');
+                      scroll =true; 
+                      $(this).scrollTop(e.originalEvent.wheelDelta);
+                  }
+              }
+          });
+        
+        // Scroll event to detect that scrollbar reached top of the container
+        $('.apps').scroll(function(){
+          var pos=$(this).scrollTop();
+          if(pos == 0){
+              scroll =false;
+              $('.apps').css({height: launcherMaxHeight}).removeClass('overflow');
+              $(".second-set").hide();
+          }
+        });
+        
+        // Click event handler to show more apps
+        $('.apps .more').click(function(){
+          $(".second-set").show();
+          $(".apps").animate({ scrollTop: $('.apps')[0].scrollHeight}).css({height: 296}).addClass('overflow');
+        });
+        
+        // Click event handler to toggle dropdown
+        $(".button").click(function(event){
+          event.stopPropagation();
+          $(".app-launcher").toggle();
+        });
+        
+        $(document).click(function() {
+          //Hide the launcher if visible
+          $('.app-launcher').hide();
+          });
+          
+          // Prevent hiding on click inside app launcher
+          $('.app-launcher').click(function(event){
+              event.stopPropagation();
+          });
+        
+        });
+        
+        // Resize event handler to maintain the max-height of the app launcher
+        $(window).resize(function(){
+          $('.apps').css({maxHeight: $(window).height() - $('.apps').offset().top});
+        });
+        
+           </script>
 
+
+       </body>
+       </html>
